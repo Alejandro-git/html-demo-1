@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/xxx" method="POST" autocomplete="on" target="_blank">
+        <input name="username" type="text" required/>
+        <!-- required意思是必须填写此项 -->
+        <hr>
+        <input type="color"/>
+        <hr>
+        <input type="password"/>
+        <hr>
+        <input name="gender" type="radio">男
+        <input name="gender" type="radio">女
+        <!-- 单个选项 ，如果要不能同时选择的话，给他们一个共同的name-->
+        <hr>
+        <input name="hobby" type="checkbox">唱
+        <input name="hobby" type="checkbox">跳
+        <input name="hobby" type="checkbox">RAP
+        <input name="hobby" type="checkbox">篮球
+        <!-- 多个选项，同时选择使用checkbox，
+            同样给他们一个共同的那么，让它们处于同一个字符串 -->
+        <hr>
+        <input type="file">
+        <!-- 上传单个文件 -->
+        <input type="file" multiple>
+        <!-- 上传多个文件 -->
+        <hr>
+        看不见：<input type="hidden">
+        <!-- 不显示 -->
+        <hr>
+        <textarea style="resize: none; width: 50%; height: 300px;">
+        
+        </textarea>
+        <!-- 可拖动的文本框；
+              如果不想拖动用style控制。 -->
+        <hr>
+        <select>
+            <option value="">- 请选择 -</option>
+            <option value="1">星期一</option>
+            <option value="2">星期二</option>
+            <option value="3">星期三</option>
+        </select>
+        <!-- 可用于选择 -->
+        <hr>
+        <input type="submit" value="搞起"/>
+        <!-- value可以自定义按钮上些什么。 -->
+        <hr>
+        <!-- input标签触发事件
+              1、onchange //当用户输入改变时触发事件
+              2、onfocus  //当鼠标聚焦时触发
+              3、onblur  //当鼠标从当前离开时触发事件
+             -->
+
+    </form>
+    <!-- form 标签里面一般会有输入框和按钮；
+         form 标签一定要有type=“submit”，不然不能进行提交请求；
+
+        form标签的四个属性
+            1、action //跳转到“xxx”网页
+            2、method //控制是发送get请求，还是发送post请求；
+            3、autocomplete  //在文本栏里提示用户输入的“相关内容”
+            4、target  //把那个页面变为“xxx” 
+        form标签相关使事件
+            1、onsubmit  // 在提交时触发此事件 
+            2、<input type="submit" >和<button type="submit" >的区别？
+                input标签里面不能再加其他标签，而button标签可以加任何标签再进行修饰。 
+    -->
+    <!-- 注意事项：
+            1、一般不见听input的click事件
+            2、form里面的input要有name
+            3、form里要放一个type=submit 才能触发submit事件 
+         -->
+    <hr>
+    <!-- 其他标签：
+            1、video  //视频
+            2、audio  //音频
+            3、canvas  //画画
+            4、svg  //矢量画
+
+        注意事项：
+            1、这些标签的兼容性一定要查看文档
+    -->
+</body>
+</html>

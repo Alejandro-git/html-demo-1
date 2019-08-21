@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zn-CH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    img {
+        max-width: 100%;
+        /* 展示手机页面，适合窗口设置方法 */
+    }
+    </style>
+</head>
+<body>
+    <img src="docg.jpg" alt="一只狗子">
+    <!-- img属性：
+        1、alt     //当图片加载失败时，显示alt的内容
+        2、height  //不能同时设置宽和高
+        3、width   //不能同时设置宽和高
+        4、src     //图片地址
+     -->
+<hr>
+    <img id="xxx" src="dog.jpg" alt="一只狗子">
+    <script>
+    xxx.onload=function(){
+        console.log("图片加载成功");
+    };
+    xxx.onerror=function(){
+        console.log("图片加载失败");
+    };
+    
+    
+    </script>
+    <!-- 在JS中的两个监听事件：
+          1、onload     //加载成功时响应
+          2、onerror    //加载失败时响应
+        测试的时候用，一般不用。
+     -->
+</body>
+</html>
